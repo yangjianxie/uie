@@ -1,0 +1,14 @@
+python /home/yangjx/project1/uie/uie_pytorch-main/finetune.py \
+    --train_path "/home/yangjx/project1/uie/data/train.txt" \
+    --dev_path "/home/yangjx/project1/uie/data/dev.txt" \
+    --save_dir "/home/yangjx/project1/uie/checkpoint" \
+    --learning_rate 1e-5 \
+    --batch_size 16 \
+    --max_seq_len 512 \
+    --num_epochs 2 \
+    --model "/home/yangjx/project1/uie/uie-base" \
+    --seed 1000 \
+    --logging_steps 500 \
+    --valid_steps 2500 \
+    --max_model_num 1 \
+    --device "gpu"
